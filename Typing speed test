@@ -1,13 +1,13 @@
-1 import time
-2 String='typing speed test'
-3 wordcount=len(String.split())
-4 print(String)
-5 while True:
-6  t0=time.time()
-7  inputtext=str(input('Enter the Sentence:'))
-8  t1=time.time()
-9  accuracy=len(set(inputtext.split())&set(String.split()))
-10   accuracy=accuracy/wordcount
-11   timetaken=t1-t0
-12   wpm=wordcount/timetaken
-13   print("WPM",wpm,"Accuracy",accuracy,"Timetaken",timetaken)
+  import time
+  String='typing speed test'
+  wordcount=len(String.split())
+  print(String)
+  while True:
+  t0=time.time()
+  inputtext=str(input('Enter the Sentence:'))
+  t1=time.time()
+  accuracy=len(set(inputtext.split())&set(String.split()))
+  accuracy=accuracy/wordcount
+  timetaken=t1-t0
+   wpm=wordcount/timetaken
+  print("WPM",wpm,"Accuracy",accuracy,"Timetaken",timetaken)
